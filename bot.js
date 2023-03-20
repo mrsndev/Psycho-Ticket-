@@ -99,8 +99,8 @@ client.unload = (command) => {
 };
 
 let cstoken;
-if (process.env.TOKEN) {
-  cstoken = process.env.TOKEN;
+if (ayarlar.TOKEN) {
+  cstoken = ayarlar.TOKEN;
 }
 if (cstoken) {
   client.login(cstoken).catch(() => {})
